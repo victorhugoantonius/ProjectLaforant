@@ -1,0 +1,279 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.containers {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    max-width: 1150px;
+  }
+
+  a {
+      text-decoration: none;
+  }
+
+  .fa {
+    margin-right: 5px;
+  }
+
+
+  .logo {
+    width: 150px;
+    height: 60px;
+  }
+  
+  .header-left {
+    float: left;
+  }
+  
+  .header-right {
+    float: right;
+    margin-right: 5px;
+  }
+  
+  .header-right a {
+    font-size: 25px;
+    font-family: fantasy;
+    line-height: 65px;
+    padding: 0 25px;
+    color: orangered;
+    display: block;
+    float: left;
+    transition: all 0.5s;
+  }
+  
+  .header-right a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .menu-icon {
+    color: white;
+    float: right;
+    font-size: 25px;
+    padding: 21px 0;
+    display: none;
+  }
+
+header {
+    height: 65px;
+    width: 100%;
+    background-color: rgba(34, 49, 52, 1.2);
+    position :fixed;
+    top: 0;
+    z-index: 12;
+}
+
+.contents
+{
+    background-image: linear-gradient(orangered,tomato);
+    flex-wrap: wrap; 
+    padding: 25px;
+}
+
+.contents h1 {
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 42px;
+    font-family: fantasy;
+    padding: 30px;
+    -webkit-text-stroke: 2px gray;
+    flex-wrap: wrap;
+}
+
+.top-req {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.top-req h3 {
+    color: rgba(34, 50, 55, 0.8);
+    font-size: 24px;
+    font-family: fantasy;
+}
+
+.top-req h3:hover {
+    background:gray;
+}
+
+.CPU , .Memory
+, .System 
+, .FPS {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    background: lightgrey;
+}
+
+.VGA , .Disk , .c {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    background: white;
+}
+
+.VGA p {
+    color: rgba(34, 50, 55, 0.8);
+    font-family: fantasy;
+    font-size: 14px;
+    width: 7%;
+    line-height: 24px;
+}
+
+.CPU p {
+    color: rgba(34, 50, 55, 0.8);
+    font-family: fantasy;
+    font-size: 14px;
+    width: 7%;
+    line-height: 24px;
+}
+.Memory p {
+    color: rgba(34, 50, 55, 0.8);
+    font-family: fantasy;
+    font-size: 14px;
+    width: 7%;
+}
+
+.Disk p {
+    color: rgba(34, 50, 55, 0.8);
+    font-family: fantasy;
+    font-size: 14px;
+    width: 7%;
+    line-height: 20px;
+    padding-top: 5px;
+}
+
+.System p{
+    color: rgba(34, 50, 55, 0.8);
+    font-family: fantasy;
+    font-size: 14px;
+    width: 7%;
+    line-height: 22px;
+}
+
+.c p {
+    color: rgba(34, 50, 55, 0.8);
+    font-family: fantasy;
+    font-size: 14px;
+    width: 7%;
+    line-height: 24px;
+}
+
+.FPS p {
+    color: rgba(34, 50, 55, 0.8);
+    font-family: fantasy;
+    font-size: 14px;
+    width: 7%;
+    line-height: 32px;
+}
+
+.top-req a, .CPU a , .VGA a
+, .Memory a , .Disk a , .System a
+, .c a , .FPS a{
+    color: navy;
+}
+
+.top-req a:hover {
+    color: black;
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.social-med {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.med img{
+    width: 60px;
+    height: 80px;
+    text-decoration: none;
+    margin-top: 35px;
+}
+
+.med2 img {
+    width: 70px;
+    height: 100px;
+    margin-top: 25px;
+}
+
+.med3 img {
+    width: 100px;
+    height: 140px;
+    margin-bottom: 20px;
+}
+
+
+.text-footer p {
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    color: gray;
+    padding-bottom: 25px;
+}
+
+.footer-p {
+    padding: 5px;
+}
+
+@media (max-width : 800px)
+{
+    .header-right a{
+        font-size: 18px;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        flex-basis: 100%;
+        padding: 0;
+        text-align: center;
+        align-items: center;
+    }
+
+    .item {
+        padding: 50px;
+        list-style: none;
+        line-height: normal;
+    }
+
+    .top-req h3 {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .CPU p , .VGA p , .Memory p
+    , .Disk p , .System p , .c p , .FPS p {
+        font-size: 12px;
+        width: 20%;
+        padding-bottom: 10px;
+    }
+    .contents h1 {
+        font-size: 24px;
+    }
+
+    footer {
+        flex-basis: 100%;
+    }
+
+    .social-med {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-p {
+        font-size: 12px;
+        padding: 0px;
+    }
+
+}
